@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"> <!--ligua Inglesa-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio-Reprograma</title>
+    <!--link do  icone do title-->
+    <link rel="icon" href="img/favicon.ico" />
+    <!--link do CSS-->
+    <link rel="stylesheet" type="text/css" href="desafio.css" />
+  </head>
+  <body>
+          <!-- inicio menu de navegação-->
+    <nav class="barra-navegacao">
+      <img
+        class="barra-navegacao__logotipo"
+        src="img/logotipo-reprograma.png"
+      />
+    </nav>
+            <!-- inicio cabeçalho-->
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">Calculadora Freelance Projeto</h1>
+    </header>
+     <!-- inicio container-->
+    <main class="conteudo-principal">
+       <!-- inicio section -->
+      <section class="secao secao-hora">
+         <!-- inicio article-->
+        <article class="secao__conteudo">
+           <!-- inicio formulario-->
+          <div class="secao__formulario">
+             <!-- inicio do campo valor hora-->
+            <fieldset>
+              <legend>Qual o valor da sua hora?</legend>
+              <div class="secao__formulario__grupo">
+                <!-- label contem a mensagem que sera exibida dentro do campo do formulario para o usuario inserir-->
+              <label for="valor-hora">Valor Hora</label>
+              <input type="number" id="valor-hora" /> 
+              </div>
+            </fieldset>
+                                  
+                                <!-- inicio do campo quantidas de hora para desenvolver o projeto-->
+            <fieldset>
+              <legend>Quantas horas voce vai trabalhar no projeto?</legend>
+              <div class="secao__formulario__grupo">
+              <label for="horas-projeto">Horas Projeto</label>
+              <input type="number" id="horas-projeto" />
+              </div>
+            </fieldset>
+             
+                     <!-- inicio do Botão-->
+          <button onclick="calcularValorProjeto()">Calcular</button>
+          </div>
+        </article>
+        <!-- inicio rodape lateral-->
+        
+        <footer class="secao__rodape">
+          <h3 class="secao__rodape__valor">
+            <span id="resposta">R$ 0,00</span>
+          </h3>
+          <p class="secao__rodape__legenda">Valor por projeto</p>
+        </footer>
+      </section>
+    </main>
+
+
+
+            <!-- inicio rodape inferior-->
+    <footer class="rodape">Desenvolvido por NILVA PIRES <a href="desafio.html">♥ </a></footer>
+     
+
+    <script type="text/javascript" src="desafio.js"></script>
+  </body>
+</html>
